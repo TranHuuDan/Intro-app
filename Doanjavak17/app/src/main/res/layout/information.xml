@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="15dp"
+    android:layout_marginHorizontal="11.7dp"
+    app:cardBackgroundColor="#a9e2e8"
+    app:cardCornerRadius="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="13.5dp">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/hinhinfo"
+            android:layout_width="130px"
+            android:layout_height="130px"
+            android:scaleType="centerCrop"
+            android:src="@drawable/background_gradient"
+            ></ImageView>
+
+        <TextView
+            android:textSize="10sp"
+            android:id="@+id/tv_inforvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_toEndOf="@+id/hinhinfo"
+            android:text="35 °C"
+            android:textColor="#000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.554"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hinh"></TextView>
+
+        <TextView
+            android:textSize="10sp"
+            android:id="@+id/tv_inforname"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/hinhinfo"
+            android:text="Temperature"
+            android:textColor="#000"
+            android:layout_alignBottom="@+id/hinhinfo"
+            app:layout_constraintTop_toBottomOf="@+id/tv_inforvalue"></TextView>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

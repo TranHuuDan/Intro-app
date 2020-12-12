@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/layout_custom_toast"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_while_corner30"
+    android:padding="10dp"
+    android:orientation="horizontal"
+    android:gravity="center">
+<ImageView
+ android:layout_height="150px"
+    android:layout_width="150px"
+    android:layout_marginStart="20dp"
+    android:src="@drawable/iconhehe"></ImageView>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#000"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="20dp"
+    android:text="Thanks for your feedback!"></TextView>
+</LinearLayout>

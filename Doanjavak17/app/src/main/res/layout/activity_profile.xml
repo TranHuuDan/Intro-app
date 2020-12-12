@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient">
+<ImageButton
+    android:background="@drawable/back_ward"
+    android:id="@+id/profilebutton"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginStart="25px"
+    android:layout_marginTop="25px"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"></ImageButton>
+    <ImageView
+        android:src="@drawable/avataicon150x150"
+        android:id="@+id/imageView"
+        android:scaleType="fitXY"
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:layout_marginTop="200px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40px"
+        android:text="Nguyen Van A"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"></TextView>
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="100px"
+        android:layout_height="5px"
+        android:layout_marginTop="30px"
+        android:background="#000"
+        app:layout_constraintTop_toBottomOf="@+id/tv_username"
+        tools:layout_editor_absoluteX="0dp"></View>
+    <ImageView
+        android:src="@drawable/givefeedbackicon150x150"
+        android:id="@+id/img_givefeedback"
+        app:layout_constraintTop_toBottomOf="@+id/v_line"
+        android:scaleType="fitXY"
+        android:layout_marginStart="100px"
+        android:layout_marginTop="30px"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="160px"
+        android:layout_height="150px"></ImageView>
+    <TextView
+        android:id="@+id/tv_givefeedback"
+        android:textStyle="normal"
+        android:layout_marginStart="10px"
+        app:layout_constraintTop_toTopOf="@+id/img_givefeedback"
+        app:layout_constraintStart_toEndOf="@+id/img_givefeedback"
+        android:text="Give Feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="150px"
+        android:gravity="center"></TextView>
+    <ImageView
+        android:src="@drawable/helpandsupporticon150x150"
+        android:id="@+id/img_help"
+        app:layout_constraintTop_toBottomOf="@+id/img_givefeedback"
+        android:scaleType="fitXY"
+        android:layout_marginStart="100px"
+        android:layout_marginTop="30px"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="150px"
+        android:layout_height="150px"></ImageView>
+    <TextView
+        android:id="@+id/tv_help"
+        android:textStyle="normal"
+        android:layout_marginStart="20px"
+        app:layout_constraintTop_toTopOf="@+id/img_help"
+        app:layout_constraintStart_toEndOf="@+id/img_help"
+        android:text="Help and Support"
+        android:layout_width="wrap_content"
+        android:layout_height="150px"
+        android:gravity="center"></TextView>
+    <ImageView
+        android:src="@drawable/change_password1"
+        android:id="@+id/img_changepass"
+        app:layout_constraintTop_toBottomOf="@+id/img_help"
+        android:scaleType="fitXY"
+        android:layout_marginStart="100px"
+        android:layout_marginTop="30px"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="150px"
+        android:layout_height="150px"></ImageView>
+    <TextView
+        android:id="@+id/tv_changepass"
+        android:textStyle="normal"
+        android:layout_marginStart="20px"
+        app:layout_constraintTop_toTopOf="@+id/img_changepass"
+        app:layout_constraintStart_toEndOf="@+id/img_changepass"
+        android:text="Change Password"
+        android:layout_width="wrap_content"
+        android:layout_height="150px"
+        android:gravity="center"></TextView>
+    <ImageView
+        android:src="@drawable/logout150x150"
+        android:id="@+id/img_logout"
+        app:layout_constraintTop_toBottomOf="@+id/img_changepass"
+        android:scaleType="fitXY"
+        android:layout_marginStart="100px"
+        android:layout_marginTop="30px"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="150px"
+        android:layout_height="150px"></ImageView>
+    <TextView
+        android:id="@+id/tv_logout"
+        android:textStyle="normal"
+        android:layout_marginStart="20px"
+        app:layout_constraintTop_toTopOf="@+id/img_logout"
+        app:layout_constraintStart_toEndOf="@+id/img_logout"
+        android:text="Log Out"
+        android:layout_width="wrap_content"
+        android:layout_height="150px"
+        android:gravity="center"></TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

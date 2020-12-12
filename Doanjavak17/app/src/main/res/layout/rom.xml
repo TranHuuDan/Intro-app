@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardBackgroundColor="#a9e2e8"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="5dp">
+
+        <ImageView
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/hinh"
+            android:layout_width="300px"
+            android:layout_height="200px"
+            android:scaleType="fitCenter"
+            android:src="@drawable/background_gradient"
+          ></ImageView>
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Living room"
+            android:textSize="10sp"
+            android:textColor="#000"
+            android:layout_below="@+id/hinh"
+            app:layout_constraintTop_toBottomOf="@+id/hinh"></TextView>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
